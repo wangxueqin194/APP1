@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".On_line">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:padding="8dp"
+    android:background="@color/BuleTitle"
+    tools:ignore="MissingConstraints">
+    <Button
+        android:layout_width="15dp"
+        android:layout_height="27dp"
+        android:background="@drawable/returnlast"
+        android:layout_marginLeft="10dp"
+        android:onClick="OnBack"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp" />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="中英文连线"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true" />
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="50dp">
+
+        <LinearLayout
+            android:id="@+id/chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true">
+
+            <Button
+                android:id="@+id/c1"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:text="苹果"
+                android:background="@drawable/button_btn"
+                android:textSize="21sp" />
+            <Button
+                android:id="@+id/c2"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:text="香蕉"
+                android:background="@drawable/button_btn"
+                android:layout_marginTop="30dp"
+                android:textSize="21sp" />
+            <Button
+                android:id="@+id/c3"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:text="葡萄"
+                android:background="@drawable/button_btn"
+                android:layout_marginTop="30dp"
+                android:textSize="21sp" />
+            <Button
+                android:id="@+id/c4"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:text="橘子"
+                android:background="@drawable/button_btn"
+                android:layout_marginTop="30dp"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true">
+
+            <Button
+                android:id="@+id/e1"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:text="banana"
+                android:background="@drawable/button_btn"
+                android:textSize="21sp" />
+            <Button
+                android:id="@+id/e2"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:text="orange"
+                android:background="@drawable/button_btn"
+                android:layout_marginTop="30dp"
+                android:textSize="21sp" />
+            <Button
+                android:id="@+id/e3"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:text="apple"
+                android:background="@drawable/button_btn"
+                android:layout_marginTop="30dp"
+                android:textSize="21sp" />
+            <Button
+                android:id="@+id/e4"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:text="grape"
+                android:background="@drawable/button_btn"
+                android:layout_marginTop="30dp"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="文字连线题"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="图片连线题"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="连线题——纯展示模式"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

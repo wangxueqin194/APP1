@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".On_line">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="8dp"
+        android:background="@color/BuleTitle"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="27dp"
+            android:background="@drawable/returnlast"
+            android:layout_centerVertical="true"
+            android:onClick="OnBack" />
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="听力选图"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="第一题"
+            android:textSize="22sp" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/loudspeaker"
+            android:layout_marginLeft="80dp"/>
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="再听一遍"
+            android:textSize="20dp"
+            android:background="@color/LightYello"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="50dp"/>
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="听不出来"
+            android:textSize="20dp"
+            android:background="@color/LightYello"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"/>
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="选项"
+            android:textSize="22sp"
+            android:layout_marginTop="115dp"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1、"
+                android:textSize="21sp"
+                android:layout_marginTop="165dp"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/apple"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="165dp"/>
+
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="285dp"
+                android:layout_marginLeft="20dp"
+                android:text="2、"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/banana"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="285dp"/>
+
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="3、"
+                android:textSize="21sp"
+                android:layout_marginTop="405dp"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/grape"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="405dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingHorizontal="15dp">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="上一题"
+                android:textSize="20sp"
+                android:background="@color/Blue_btn" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="下一题"
+                android:textSize="20sp"
+                android:background="@color/Blue_btn"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

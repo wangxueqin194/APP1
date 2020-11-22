@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".Photograph_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:layout_alignParentTop="true"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="8dp">
+
+        <Button
+            android:id="@+id/returnlast"
+            android:layout_width="15dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/returnlast"
+            android:layout_alignParentLeft="true"
+            android:onClick="OnBack"/>
+
+        <ImageView
+            android:id="@+id/jingtou"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/choose"
+            android:src="@drawable/jingtou" />
+
+        <Button
+            android:id="@+id/choose"
+            android:layout_width="8dp"
+            android:layout_height="25dp"
+            android:background="@drawable/choose"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="45dp"/>
+
+    <view.PictureView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/rephoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/rephoto" />
+
+
+        <Button
+            android:id="@+id/photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/photo" />
+
+        <Button
+            android:id="@+id/discern"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shibie"
+            android:onClick="discern" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="  重拍"
+            android:textSize="20sp"
+            android:layout_marginTop="80dp"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="  拍照"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_alignParentRight="true"
+            android:text="  识别"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

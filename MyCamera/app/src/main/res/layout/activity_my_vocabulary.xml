@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    tools:context=".MyVocabulary">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@color/BuleTitle"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="8dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+            android:layout_width="15dp"
+            android:layout_height="27dp"
+            android:background="@drawable/returnlast"
+                android:layout_centerVertical="true"
+            android:onClick="OnBack" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="词汇库"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_pressed"
+        android:text="我的词汇库"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/play_btn"
+        android:layout_centerHorizontal="true"
+        android:text="词书"
+        android:onClick="VBook" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/play_btn"
+        android:layout_alignParentRight="true"
+        android:text="练习"
+        android:onClick="exercise" />
+</RelativeLayout>
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp">
+
+    <Button
+        android:id="@+id/apple"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/citiao"
+        android:text="apple"
+        android:onClick="discernr" />
+    <Button
+        android:id="@+id/dog"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/citiao"
+        android:layout_below="@id/apple"
+        android:text="dog" />
+    <Button
+        android:id="@+id/cat"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/citiao"
+        android:text="cat"
+        android:layout_below="@id/dog"/>
+
+    </RelativeLayout>
+</LinearLayout>

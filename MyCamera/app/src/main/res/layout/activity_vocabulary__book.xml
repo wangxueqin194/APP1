@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    tools:context=".MyVocabulary">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@color/BuleTitle"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="8dp"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="27dp"
+                android:background="@drawable/returnlast"
+                android:onClick="OnBack" />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="词汇库"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/play_btn"
+                android:text="我的词汇库"
+                android:layout_alignParentLeft="true"
+                android:onClick="myV"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_pressed"
+                android:layout_centerHorizontal="true"
+                android:text="词书"
+                android:onClick="VBook" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/play_btn"
+                android:layout_alignParentRight="true"
+                android:text="练习"
+                android:onClick="exercise" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/absclv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        tools:ignore="UnknownId" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="40dp">
+
+                <Button
+                    android:id="@+id/gradeOne1"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/gradeone"
+                    android:onClick="grade"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:id="@+id/gradeOne2"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/gradefirst"
+                    tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/gradeTwo1"
+                android:layout_width="110dp"
+                android:layout_height="140dp"
+                android:layout_below="@id/gradeOne1"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/gradetwo"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/gradeTwo2"
+                android:layout_width="110dp"
+                android:layout_height="140dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/gradeOne2"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/gradesecond"
+                tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/gradeThree1"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/gradeTwo1"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/gradethree"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/gradeThree2"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/gradeTwo2"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/gradethird"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/gradefour1"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/gradeThree1"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/gradefour"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/gradefour2"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/gradeThree2"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/gradefouth"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/gradefive1"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/gradefour1"
+                    android:background="@drawable/gradefive"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/gradefive2"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/gradefour2"
+                    android:background="@drawable/gradefifth"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/gradesix1"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/gradefive1"
+                    android:background="@drawable/gradesix"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/gradesix2"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/gradefive2"
+                    android:background="@drawable/gradesixth"
+                    tools:ignore="ButtonStyle" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

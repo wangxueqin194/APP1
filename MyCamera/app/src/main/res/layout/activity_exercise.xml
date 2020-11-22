@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyVocabulary">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@color/BuleTitle"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="8dp"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="27dp"
+                android:background="@drawable/returnlast"
+                android:onClick="OnBack" />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="词汇库"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/play_btn"
+                android:text="我的词汇库"
+                android:onClick="myV"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/play_btn"
+                android:layout_centerHorizontal="true"
+                android:text="词书"
+                android:onClick="VBook" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_pressed"
+                android:layout_alignParentRight="true"
+                android:text="练习"
+                android:onClick="exercise" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ec"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="50dp"
+            android:onClick="on_line"
+            tools:ignore="OnClick" />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="中英文连线"
+            android:textSize="20sp"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="65dp"/>
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:background="@drawable/listeningandchoose"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="40dp"
+            android:onClick="listening"
+            tools:ignore="OnClick" />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="听力识图"
+            android:textSize="20sp"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="235dp"/>
+        <Button
+            android:layout_width="205dp"
+            android:layout_height="140dp"
+            android:background="@drawable/testvocabulary"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="230dp"
+            android:onClick="testvocabulary"
+            tools:ignore="OnClick" />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="词汇量测试"
+            android:textSize="20sp"
+            android:layout_marginTop="375dp"
+            android:layout_marginLeft="70dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

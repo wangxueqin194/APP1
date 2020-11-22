@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    tools:context=".Mine">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:background="@color/BuleTitle"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="27dp"
+            android:background="@drawable/returnlast"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:onClick="OnBack"
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text="我的"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true" />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/settings"
+            android:onClick="setting"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="15dp"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/avatar"
+            android:onClick="user"
+            android:layout_marginTop="40dp" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Yoon"
+            android:textSize="19sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="155dp"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="我的词汇量：99"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="拍照学习量：58"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="90dp"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="全国排名：72"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="130dp"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:focusable="false"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Gray"
+                android:text="    版图"
+                android:textSize="22sp"
+                android:gravity="center_vertical" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="30dp">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/furniture"
+                    android:layout_alignParentLeft="true"/>
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/animal"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Gray"
+                android:text="    成就"
+                android:textSize="22sp"
+                android:gravity="center_vertical" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="40dp">
+
+            </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Gray"
+                android:text="    等级"
+                android:textSize="22sp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
